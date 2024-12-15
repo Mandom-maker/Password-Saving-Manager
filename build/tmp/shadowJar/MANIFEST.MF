@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Main-Class: sample.demo.Main
+Class-Path: lib/sqlite-jdbc-3.42.0.0.jar lib/jbcrypt-0.4.jar lib/h2-2.2.
+ 220.jar lib/log4j-core-2.17.1.jar lib/log4j-api-2.17.1.jar lib/javafx-f
+ xml-21-win.jar lib/javafx-controls-21-win.jar lib/javafx-controls-21.ja
+ r lib/javafx-graphics-21-win.jar lib/javafx-graphics-21.jar lib/javafx-
+ base-21-win.jar lib/javafx-base-21.jar
+
