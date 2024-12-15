@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="demo:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/demo_jar</output-path>
+    <root id="archive" name="demo.jar">
+      <element id="module-output" name="demo.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.1/d771af8e336e372fb5399c99edabe0919aeaf5b2/log4j-api-2.17.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.17.1/779f60f3844dadc3ef597976fcb1e5127b1f343d/log4j-core-2.17.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/21/f8d0163c8bf9cffdcf2eac163446ea550b3051ca/javafx-graphics-21.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.10.2/3197154a1f0c88da46c47a9ca27611ac7ec5d797/junit-platform-commons-1.10.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-fxml/21/4a1cd270e1ae03ae73110eb68622afd457c6f903/javafx-fxml-21-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.10.2/fb55d6e2bce173f35fd28422e7975539621055ef/junit-jupiter-api-5.10.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/21/a7e334fbb619859e1010cad06ddcf16e774c87a0/javafx-base-21-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/21/76e295d84578a3d9688e092aae3f2ff1cf3e83a9/javafx-controls-21-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/21/be7576df67c204d6d3f9c6c5d4db4e268ff22ff2/javafx-base-21.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.10.2/d53bb4e0ce7f211a498705783440614bfaf0df2e/junit-platform-engine-1.10.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.10.2/f1f8fe97bd58e85569205f071274d459c2c4f8cd/junit-jupiter-engine-5.10.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/21/f290138dcff0ee5679eebd2096f29dfa1f7563c6/javafx-controls-21.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mindrot/jbcrypt/0.4/af7e61017f73abb18ac4e036954f9f28c6366c07/jbcrypt-0.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/21/8083d97ea236079c82cf8e3463b62990340346d4/javafx-graphics-21-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/a231e0d844d2721b0fa1b238006d15c6ded6842a/apiguardian-api-1.1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.3.0/152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e/opentest4j-1.3.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
