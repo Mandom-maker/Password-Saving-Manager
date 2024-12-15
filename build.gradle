@@ -1,0 +1,86 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.javamodularity.moduleplugin' version '1.8.12'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+    id 'org.beryx.jlink' version '2.25.0'
+    id("com.github.johnrengelman.shadow") version "7.1.0"
+
+}
+
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+group 'sample'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    junitVersion = '5.10.2'
+}
+
+dependencies {
+    // Другие зависимости
+    implementation 'org.xerial:sqlite-jdbc:3.42.0.0'
+    implementation 'org.mindrot:jbcrypt:0.4'
+    implementation 'com.h2database:h2:2.2.220'
+
+    // Добавляем зависимости для Log4j
+    implementation 'org.apache.logging.log4j:log4j-core:2.17.1'
+    implementation 'org.apache.logging.log4j:log4j-api:2.17.1'
+    implementation 'org.openjfx:javafx-controls:23.0.1'
+    implementation 'org.openjfx:javafx-fxml:23.0.1'
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+
+}
+
+sourceCompatibility = '21'
+targetCompatibility = '21'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+application {
+    mainModule = 'sample.demo'
+    mainClass = 'sample.demo.Main'
+}
+
+javafx {
+    version = '21'
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jlink {
+    imageZip = project.file("${buildDir}/distributions/app-${javafx.platform.classifier}.zip")
+    options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
+    launcher {
+        name = 'app'
+    }
+}
+
+jar {
+    from('src/main/resources/Data') {
+        into '/' // Директория внутри JAR
+    }
+    manifest {
+        attributes 'Main-Class': 'sample.demo.Main'
+        attributes 'Class-Path': configurations.runtimeClasspath.files.collect { "lib/$it.name" }.join(' ')
+    }
+}
+
+
+jlinkZip {
+    group = 'distribution'
+}
